@@ -6,13 +6,16 @@ import java.util.HashMap;
  * Created by eax on 16/02/16.
  */
 public class Board {
-    private HashMap board = new HashMap();
+    Field[] board;
 
-    public Board(HashMap board) {
-        this.board = board;
+    public Board() {
     }
 
-    public HashMap getBoard() {
+    public Field[] getBoard() {
         return board;
+    }
+
+    public void setBoard(Field[] board) {
+        this.board = board;
     }
 }
